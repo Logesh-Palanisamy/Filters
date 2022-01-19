@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Filter Web</title>
+	<link rel="stylesheet" href="css/filtering.css">
+	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+        </script>
+	<script type="text/javascript" src="js/filter.js"></script>
+</head>
+
+<body>
+<header>
+	<h1>Let's Have Fun with Filters.........!</h1>
+</header>
+<h2>Display</h2>
+<canvas id="can">
+</canvas>
+<img src="https://www.flyingpenguins.in/blogs/wp-content/uploads/2020/08/Web-Development.jpg"/>
+<p><h2>Upload File </h2>
+ <input type="file" multiple="false" accept="image/*" id="fgfile" onchange="loadImage()" >
+</p>
+<p><h2>Filters </h2>
+  	<input type="button" value="grayscale" onclick="dogray()" id="gray">
+	<input type="button" value="redscale" onclick="dored()" id="red">
+ 	<input type="button" value="greenscale" onclick="dogreen()" id="green">
+	<input type="button" value="rainbow" onclick="dorainbow()" id="rainbow">
+	<input type="button" value="orangescale" onclick="doorange()" id="orange">
+	<input type="button" value="yellowscale" onclick="doyellow()">
+	<input type="button" value="bluescale" onclick="doblue()">
+	<input type="button" value="indigo" onclick="doindigo()">
+	<input type="button" value="voiscale" onclick="dovoilet()">
+</p>
+<p><h2>Options </h2></p>
+<p>	
+	<input type="button" value="Reset Image" onclick="reset()" id="r">
+    	<input type="button" value="clear" id="clear" onclick="clearing()"><span>- a creation from logs</span>
+</p>
+</body>
+</html>
